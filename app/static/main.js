@@ -34,6 +34,31 @@ document.querySelector('#time').textContent=color;
 
 setInterval(function(){output(time())},1000)
 
+document.getElementById('time').onmouseover = function () {mouseOver()};
+document.getElementById('time').onmouseout = function() {mouseOut()};
+
+function mouseOver(){
+    document.getElementById('time').toString(num);
+    //some sort of function to change value to hex
+}
+
+function mouseOut() {
+    document.getElementById('time').toString(num);
+}
+  // decimal to hexadecimal
+ConvertBase.dec2hex = function (num) {
+        return ConvertBase(num).from(10).to(16);
+    };
+
+//
+// clock = document.getElementById('time');
+//
+// clock.addEventListener("mouseover",function(event) {
+//
+//     }
+//
+// )
+
 
     // let clockText = "00:00:01";
 
