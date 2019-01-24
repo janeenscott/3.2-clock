@@ -43,7 +43,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'localhost',
-    'colorclockccs.herokuapp.com/',
+    'https://colorclockccs.herokuapp.com/',
 ]
 
 
