@@ -1,11 +1,11 @@
 // console.log('sup')
-let clock = document.querySelector(".clock");
+// let clock = document.querySelector(".clock");
 // console.log('clock', clock)
 
 
-function displayTime(){
-    let currentTime = new Date();
-    // currentTime stores the data of the actual time and date when the function is called
+function time(){
+    var date = new Date();
+    // date stores the data of the actual time and date when the function is called
 
     var hours=date.getHours();
     // returns the hour value of date variable
@@ -25,18 +25,25 @@ seconds=arr[2];
 return hours + ':' +  minutes + ':' + seconds;
 }
 
-    let clockText = "00:00:01";
-
-
-
-
-
-    clock.textContent = clockText;
-
-
+function output(time)
+{
+var color= '# ' + time;
+document.body.bgColor=color;
+document.querySelector('#time').textContent=color;
 }
 
-setInterval(displayTime, 1000)
+setInterval(function(){output(time())},1000)
+
+
+    // let clockText = "00:00:01";
+
+
+    // clock.textContent = clockText;
+
+
+
+
+// setInterval(time, 1000)
 
 //
 //
